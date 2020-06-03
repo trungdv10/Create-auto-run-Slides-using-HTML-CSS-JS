@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.clear-fix {
+    clear: both;
+}
+.slides {
+    width: 800px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.slides .wrap {
+    width: 800px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: left ease-in-out 0.5s;
+}
+.slides .wrap .slide {
+    float: left;
+}
+.slides .button .prev,
+.slides .button .next {
+    display: none;
+    width: 48px;
+    height: 32px;
+    color: #fff;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    justify-content: center;
+    font-size: 48px;
+    padding-bottom: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.slides:hover .button .prev,
+.slides:hover .button .next {
+    display: flex;
+}
+.slides .button .prev {
+    left: 10px;
+}
+.slides .button .next {
+    right: 10px;
+}
+.slides .button span {
+    line-height: 40px;
+    display: block;
+}
